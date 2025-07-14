@@ -8,70 +8,54 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
     :root{
-      --emerald:#059669;
-      --emerald-dark:#047857;
-      --teal:#14b8a6;
-      --gray-50:#f9fafb;
-      --gray-100:#f3f4f6;
-      --gray-700:#374151;
-      --slate-100:#cbd5e1;
-      --slate-400:#94a3b8;
+      --emerald:#059669;--emerald-dark:#047857;--teal:#14b8a6;
+      --gray-50:#f9fafb;--gray-100:#f3f4f6;--gray-700:#374151;
+      --slate-100:#cbd5e1;--slate-400:#94a3b8;
     }
     *{margin:0;padding:0;box-sizing:border-box}
     body{font-family:'Poppins',sans-serif;line-height:1.6;color:var(--gray-700)}
     a{text-decoration:none}
     .container{max-width:960px;margin:0 auto;padding:60px 20px}
     .btn{display:inline-block;padding:14px 32px;border-radius:12px;font-weight:600;transition:.25s}
-    .btn-primary{background:var(--emerald);color:#fff}
-    .btn-light{background:#fff;color:var(--emerald)}
-    .btn-primary:hover{background:var(--emerald-dark)}
+    .btn-primary{background:var(--emerald);color:#fff}.btn-light{background:#fff;color:var(--emerald)}.btn-primary:hover{background:var(--emerald-dark)}
     .card{background:#fff;border-radius:12px;padding:24px;box-shadow:0 4px 10px rgba(0,0,0,.05);flex:1;margin:12px;min-width:260px}
-    h1{font-size:48px;font-weight:800}
+    h1{font-size:48px;font-weight:800;margin-left:18px}
     h2{font-size:32px;font-weight:700;margin-bottom:32px;text-align:center;color:var(--emerald)}
+    /* logo */
+    .logo-wrapper{display:flex;align-items:center;justify-content:center;margin-bottom:28px}
+    .logo-svg{width:96px;height:96px;flex-shrink:0}
+    /* hero */
+    .hero{background:linear-gradient(90deg,var(--emerald) 0%,var(--teal) 100%);color:#fff;text-align:center;padding:90px 20px}
+    @media(max-width:600px){h1{font-size:38px}.logo-svg{width:72px;height:72px}}
   </style>
 </head>
 <body>
-  <!-- HERO WITH LARGER, UNIQUE LOGO -->
+  <!-- HERO WITH LARGE LOGO -->
   <header class="hero">
     <div class="logo-wrapper">
       <!-- stylised brain + shield logo -->
       <svg class="logo-svg" viewBox="0 0 120 120" aria-hidden="true">
-        <!-- shield background -->
         <path d="M60 6 L100 24 V58 C100 84 82 106 60 114 C38 106 20 84 20 58 V24 Z" fill="none" stroke="#fff" stroke-width="4"/>
-        <!-- brain left -->
         <path d="M46 38 C40 36 34 40 34 46 C34 52 40 56 46 55" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/>
         <path d="M46 55 C40 54 34 60 34 66 C34 72 40 76 46 74" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/>
-        <!-- brain right -->
         <path d="M74 38 C80 36 86 40 86 46 C86 52 80 56 74 55" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/>
         <path d="M74 55 C80 54 86 60 86 66 C86 72 80 76 74 74" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/>
-        <!-- brain centre curve -->
         <path d="M60 34 V78" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
       </svg>
-    <h1>12<sup>th</sup> Avenue Clinic</h1>
-    <p style="font-size:20px;max-width:640px;margin:20px auto;">Compassionate outpatient psychiatric care in Regina.</p>
-    <div style="margin-top:40px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <h1>12<sup>th</sup> Avenue Clinic</h1>
     </div>
   </header>
-
   <!-- TREATMENTS -->
   <section id="treatments" style="background:var(--gray-50);">
     <div class="container">
       <h2>Specialized Treatments</h2>
       <div style="display:flex;flex-wrap:wrap;justify-content:center;">
-        <div class="card">
-          <h3 style="font-size:20px;font-weight:700;margin-bottom:8px;">Generalized Adult Care</h3>
-          <p>personalised treatment plans</p>
-           </div>
-        <div class="card">
-          <h3 style="font-size:20px;font-weight:700;margin-bottom:8px;">rTMS</h3>
-          <p>Non-invasive magnetic stimulation for depression &amp; OCD.</p>
-        </div>
-        <div class="card">
-          <h3 style="font-size:20px;font-weight:700;margin-bottom:8px;">Ketamine‑Assisted Therapy</h3>
-          <p>Rapid relief for treatment‑resistant depression in a safe outpatient setting.</p>
+        <div class="card"><h3 style="font-size:20px;font-weight:700;margin-bottom:8px;">General Adult Care</h3><p>Personalised evidence‑based treatment plans.</p></div>
+        <div class="card"><h3 style="font-size:20px;font-weight:700;margin-bottom:8px;">rTMS</h3><p>Non‑invasive magnetic stimulation for depression &amp; OCD.</p></div>
+        <div class="card"><h3 style="font-size:20px;font-weight:700;margin-bottom:8px;">Ketamine‑Assisted Therapy</h3><p>Rapid relief for treatment‑resistant depression in a safe outpatient setting.</p></div>
       </div>
     </div>
-  </section>>
+  </section>
 
   <!-- CONTACT -->
   <section id="contact" style="background:var(--gray-100);">
@@ -90,12 +74,14 @@
 
   <!-- FOOTER -->
   <footer style="background:#1f2937;color:var(--slate-100);text-align:center;padding:40px 20px;font-size:14px;">
-    <p style="font-weight:600;">12th Avenue Clinic · 2500 12th Avenue Regina, Saskatchewan</p>
-    <p>Tel: (306) 352-5506 ·</p>
+    <p style="font-weight:600;">12th Avenue Clinic · 2500 12th Avenue, Regina, Saskatchewan</p>
+    <p>Tel: (306) 352‑5506</p>
     <p style="color:var(--slate-400);">© <span id="year"></span> 12th Avenue Clinic. All rights reserved.</p>
   </footer>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
   <script src="https://cdn.botpress.cloud/webchat/v3.0/inject.js"></script>
- <script src="https://cdn.botpress.cloud/webchat/v3.0/inject.js"></script>
-<script src="https://files.bpcontent.cloud/2025/07/14/02/20250714021138-VKKGVG15.js"></script>
+  <script src="https://files.bpcontent.cloud/2025/07/14/02/20250714021138-VKKGVG15.js"></script>
 </body>
 </html>
+
