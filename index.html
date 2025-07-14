@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>12th Avenue Clinic – Outpatient Psychiatric Care</title>
+  <!-- Google Font for clean typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --emerald:#059669;
+      --emerald-dark:#047857;
+      --teal:#14b8a6;
+      --gray-50:#f9fafb;
+      --gray-100:#f3f4f6;
+      --gray-700:#374151;
+      --slate-100:#cbd5e1;
+      --slate-400:#94a3b8;
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Poppins',sans-serif;line-height:1.6;color:var(--gray-700)}
+    a{text-decoration:none}
+    .container{max-width:960px;margin:0 auto;padding:60px 20px}
+    .btn{display:inline-block;padding:14px 32px;border-radius:12px;font-weight:600;transition:.25s}
+    .btn-primary{background:var(--emerald);color:#fff}
+    .btn-light{background:#fff;color:var(--emerald)}
+    .btn-primary:hover{background:var(--emerald-dark)}
+    .card{background:#fff;border-radius:12px;padding:24px;box-shadow:0 4px 10px rgba(0,0,0,.05);flex:1;margin:12px;min-width:260px}
+    h1{font-size:48px;font-weight:800}
+    h2{font-size:32px;font-weight:700;margin-bottom:32px;text-align:center;color:var(--emerald)}
+  </style>
+</head>
+<body>
+  <!-- HERO -->
+  <header style="background:linear-gradient(90deg,var(--emerald) 0%,var(--teal) 100%);color:#fff;text-align:center;padding:80px 20px;">
+    <h1>12<sup>th</sup> Avenue Clinic</h1>
+    <p style="font-size:20px;max-width:640px;margin:20px auto;">Compassionate outpatient psychiatric care in Regina.</p>
+    <div style="margin-top:40px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+    </div>
+  </header>
+
+  <!-- TREATMENTS -->
+  <section id="treatments" style="background:var(--gray-50);">
+    <div class="container">
+      <h2>Specialized Treatments</h2>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;">
+        <div class="card">
+          <h3 style="font-size:20px;font-weight:700;margin-bottom:8px;">Generalized Adult Care</h3>
+          <p>personalised treatment plans</p>
+           </div>
+        <div class="card">
+          <h3 style="font-size:20px;font-weight:700;margin-bottom:8px;">rTMS</h3>
+          <p>Non-invasive magnetic stimulation for depression &amp; OCD.</p>
+        </div>
+        <div class="card">
+          <h3 style="font-size:20px;font-weight:700;margin-bottom:8px;">Ketamine‑Assisted Therapy</h3>
+          <p>Rapid relief for treatment‑resistant depression in a safe outpatient setting.</p>
+      </div>
+    </div>
+  </section>>
+
+  <!-- CONTACT -->
+  <section id="contact" style="background:var(--gray-100);">
+    <div class="container">
+      <h2>Request an Appointment</h2>
+      <form onsubmit="event.preventDefault();alert('Thank you! We will contact you within 24 hours.');" style="max-width:480px;margin:0 auto;display:grid;gap:16px;">
+        <input required placeholder="Full Name" style="padding:12px;border-radius:8px;border:1px solid #d1d5db;" />
+        <input required placeholder="Phone Number" type="tel" style="padding:12px;border-radius:8px;border:1px solid #d1d5db;" />
+        <input required placeholder="Email Address" type="email" style="padding:12px;border-radius:8px;border:1px solid #d1d5db;" />
+        <textarea placeholder="Your message (optional)" rows="4" style="padding:12px;border-radius:8px;border:1px solid #d1d5db;"></textarea>
+        <button class="btn btn-primary" type="submit">Submit</button>
+        <p style="font-size:14px;text-align:center;color:#666;">We respect your privacy. Your information is kept confidential and used only to schedule your appointment.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background:#1f2937;color:var(--slate-100);text-align:center;padding:40px 20px;font-size:14px;">
+    <p style="font-weight:600;">12th Avenue Clinic · 2500 12th Avenue Regina, Saskatchewan</p>
+    <p>Tel: (306) 352-5506 ·</p>
+    <p style="color:var(--slate-400);">© <span id="year"></span> 12th Avenue Clinic. All rights reserved.</p>
+  </footer>
+  <script src="https://cdn.botpress.cloud/webchat/v3.0/inject.js"></script>
+ <script src="https://cdn.botpress.cloud/webchat/v3.0/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2025/07/14/02/20250714021138-VKKGVG15.js"></script>
+</body>
+</html>
